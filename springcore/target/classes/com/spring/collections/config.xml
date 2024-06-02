@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+   
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <bean class ="com.spring.collections.Emp" name="emp1">
+ 
+ <property name="name" value="Radhe"/>
+ 
+ <property name="phones"> 
+   <list> 
+    <value>123456</value> 
+    <value>234567</value> 
+    <value>345678</value> 
+   </list> 
+  </property> 
+   
+  <property name="address"> 
+   <set> 
+    <value>Delhi</value> 
+    <value>Dubai</value> 
+    <value>Indore</value> 
+   </set> 
+  </property> 
+   
+  <property name="courses"> 
+   <map> 
+    <entry key="java" value="2months"/> 
+    <entry key="python" value="3months"/> 
+    <entry key="C++" value="4months"/> 
+   </map> 
+  </property> 
+ 
+ 
+ </bean> 
+ 
+ 
+ 
+ </beans>
